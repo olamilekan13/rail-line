@@ -8,21 +8,22 @@
         <title>High Speed Rail > Homepage</title>
         <link rel="icon" href="https://www.highspeed.mtr.com.hk/assets/img/logo/favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="https://www.highspeed.mtr.com.hk/assets/img/logo/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../../assets/css/reset.css">
-        <link rel="stylesheet" href="../../assets/vendor/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../assets/vendor/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="../../assets/vendor/css/slick.css">
-        <link rel="stylesheet" href="../../assets/vendor/css/slick-theme.css">	
-        <link rel="stylesheet" href="../../assets/vendor/css/swiper.min.css" />
-        <link rel="stylesheet" href="../../assets/css/style.css">
-        <script src='../../assets/vendor/js/jquery-3.3.1.min.js'></script>
-        <script src='../../assets/vendor/js/bootstrap.min.js'></script>
-        <script src='../../assets/vendor/js/slick.min.js'></script>
-        <script src='../../assets/vendor/js/isotope.pkgd.min.js' type="text/javascript"></script>
-        <script src='../../assets/vendor/js/swiper.min.js'></script>
-        <script src='../../assets/js/config.js'></script>
-        <script src='../../assets/js/main.js'></script>
-        <script src='../../assets/js/navigation.js'></script>
+		{{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" type="text/css" media="all"> --}}
+        <link rel="stylesheet" href="{{ asset  ('assets/css/reset.css') }}">
+        <link rel="stylesheet" href="{{ asset  ('assets/vendor/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset  ('assets/vendor/css/bootstrap-theme.min.css')  }}">
+        <link rel="stylesheet" href="{{ asset  ('assets/vendor/css/slick.css')  }}">
+        <link rel="stylesheet" href="{{ asset  ('assets/vendor/css/slick-theme.css')  }}">	
+        <link rel="stylesheet" href="{{ asset  ('assets/vendor/css/swiper.min.css')  }}" />
+        <link rel="stylesheet" href="{{ asset  ('assets/css/style.css')  }}">
+        <script src='{{ asset  ('assets/vendor/js/jquery-3.3.1.min.js')  }}'></script>
+        <script src='{{ asset  ('assets/vendor/js/bootstrap.min.js')  }}'></script>
+        <script src='{{ asset  ('assets/vendor/js/slick.min.js')  }}'></script>
+        <script src='{{ asset  ('assets/vendor/js/isotope.pkgd.min.js')  }}' type="text/javascript"></script>
+        <script src='{{ asset  ('assets/vendor/js/swiper.min.js')  }}'></script>
+        <script src='{{ asset  ('assets/js/config.js')  }}'></script>
+        <script src='{{ asset  ('assets/js/main.js')  }}'></script>
+        <script src='{{ asset  ('assets/js/navigation.js')  }}'></script>
 	</head>
     <body>
       
