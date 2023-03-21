@@ -9,7 +9,7 @@
 							<div class="row">
 								<div class="col-sm-5 col-md-5">
 									<div class="tabulation animate-box">
-	
+
 									  <!-- Nav tabs -->
 									   <ul class="nav nav-tabs" role="tablist">
 										  <li role="presentation" class="active">
@@ -22,7 +22,7 @@
 											   <a href="#packages" aria-controls="packages" role="tab" data-toggle="tab">Packages</a>
 										  </li>
 									   </ul>
-	
+
 									   <!-- Tab panes -->
 										<div class="tab-content">
 										 <div role="tabpanel" class="tab-pane active" id="flights">
@@ -113,7 +113,7 @@
 												</div>
 											</div>
 										 </div>
-	
+
 										 <div role="tabpanel" class="tab-pane" id="hotels">
 											 <div class="row">
 												<div class="col-xxs-12 col-xs-12 mt">
@@ -122,7 +122,7 @@
 														<select class="cs-select cs-skin-border">
 															<option value="1" disabled selected>BLUELINE</option>
 															<option value="2">REDLINE</option>
-															
+
 														</select>
 													</section>
 												</div>
@@ -176,19 +176,19 @@
 												</div>
 											</div>
 										 </div>
-	
+
 										 <div role="tabpanel" class="tab-pane" id="packages">
 											 <div class="row">
 												<div class="col-xxs-12 col-xs-6 mt">
 													<section>
 														<label for="class">From:</label>
 														<select class="cs-select cs-skin-border">
-															@foreach ($station as $stations )
+															{{-- @foreach ($station as $stations )
 															<option value=""disabled selected >{{ $stations->from }}</option>
 
-																
-															@endforeach
-															{{-- <option value=""disabled selected >Agbado Station</option>
+
+															@endforeach --}}
+															<option value=""disabled selected >Agbado Station</option>
 															<option value="economy">Iju Station</option>
 															<option value="first">First</option>
 															<option value="business">Agege Station</option>
@@ -196,7 +196,7 @@
 															<option value="economy">Oshodi Station</option>
 															<option value="first">Mushin Station</option>
 															<option value="business">Yaba Station</option>
-															<option value="business">Oyingbo Station</option> --}}
+															<option value="business">Oyingbo Station</option>
 														</select>
 													</section>
 												</div>
@@ -204,12 +204,12 @@
 													<section>
 														<label for="class">To:</label>
 														<select class="cs-select cs-skin-border">
-															@foreach ($station as $stations )
+															{{-- @foreach ($station as $stations )
 															<option value=""disabled selected >{{ $stations->from }}</option>
 
-																
-															@endforeach
-															{{-- <option value="" >Agbado Station</option>
+
+															@endforeach --}}
+															<option value="" >Agbado Station</option>
 															<option value="economy">Iju Station</option>
 															<option value="first">First</option>
 															<option value="business">Agege Station</option>
@@ -217,7 +217,7 @@
 															<option value="economy">Oshodi Station</option>
 															<option value="first">Mushin Station</option>
 															<option value="business">Yaba Station</option>
-															<option value="business">Oyingbo Station</option> --}}
+															<option value="business">Oyingbo Station</option>
 														</select>
 													</section>
 												</div>
@@ -274,7 +274,7 @@
 											</div>
 										 </div>
 										</div>
-	
+
 									</div>
 								</div>
 								<div class="desc2 animate-box">
@@ -289,9 +289,9 @@
 						</div>
 					</div>
 				</div>
-	
+
 			</div>
-	
+
 
 
 
@@ -305,20 +305,20 @@
 
 
 	</div>
-	</div>	
-      
-    
+	</div>
+
+
     <div class="main-container">
 
 
 		<div class="content-container">
 			<h1 class="hidden">Homepage</h1>
 			<div class="homepage container-fluid">
-				
-					
+
+
 					<!--ssi:trip_planner_search_bar-->
-               
-				
+
+
                 <!--end of ssi:trip_planner_search_bar-->
 					<div class="container">
 						<div class="inner-content-container row">
@@ -460,7 +460,7 @@
 				</div>
 			</div>
 
-			
+
 		</div>
 		<!-- <script>
 			$(document).ready(function(){
@@ -500,10 +500,10 @@
 						redirectLink = '#' + item.id
 						carouselLink = '<p><a class="button button-default" href="' + redirectLink + '" role="button" ' + (item.is_open_new_tab ? 'target="_blank"' : '') + '><span class="content-wrapper">More</span></a></p>'
 					}
-					carouselHtml = '<div class="carousel-content swiper-slide">' + 
-								'<span class="image-container">' + 
-								'<img class="carousel-content-img" src="' + item['image_' + lang ] + '" alt="carousel slide">' + 
-								'<img class="carousel-content-img-mobile" src="' + item['mobile_image_' + lang ] + '" alt="carousel slide">' + 
+					carouselHtml = '<div class="carousel-content swiper-slide">' +
+								'<span class="image-container">' +
+								'<img class="carousel-content-img" src="' + item['image_' + lang ] + '" alt="carousel slide">' +
+								'<img class="carousel-content-img-mobile" src="' + item['mobile_image_' + lang ] + '" alt="carousel slide">' +
 								'</span>' +
 								'<div class="jumbotron">' +
 									'<h2 class="h1">' + item['title_'+ lang] + '</h2>' +

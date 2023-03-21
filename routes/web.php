@@ -38,5 +38,19 @@ Route::get('/', [TicketController::class, 'getStation']);
 
 // AUth route
 
-Route::get('login',[AuthController::class, 'login']);
-Route::get('register',[AuthController::class, 'register']);
+
+Route::controller(AuthController::class)->group(function() {
+    Route::get('/register', 'register')->name('register');
+    Route::post('/store', 'store')->name('store');
+    Route::get('/login', 'login')->name('login');
+    Route::post('/authenticate', 'authenticate')->name('authenticate');
+    Route::get('/dashboard', 'dashboard')->name('dashboard');
+    Route::post('/logout', 'logout')->name('logout');
+});
+
+// Route::get('dashboard', [AuthController::class, 'dashboard']);
+// Route::get('login', [AuthController::class, 'index'])->name('login');
+// Route::post('custom-login', [AuthController::class, 'customLogin'])->name('login.custom');
+// Route::get('registration', [AuthController::class, 'registration']);
+// Route::post('custom-registration', [AuthController::class, 'customRegistration'])->name('register.custom');
+// Route::get('signout', [AuthController::class, 'signOut'])->name('signout');
